@@ -2,9 +2,9 @@ FROM debian:stable-slim
 
 WORKDIR /app
 
-RUN apt update -y
-RUN apt autoremove -y
-RUN apt install --no-install-recommends -y python3-pip git
+RUN apt-get update -y
+RUN apt-get autoremove -y
+RUN apt-get install --no-install-recommends -y python3-pip git
 
 RUN pip3 install django
 
